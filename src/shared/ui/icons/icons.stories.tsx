@@ -1,11 +1,10 @@
 import React from 'react'
 import { ScrollView } from 'react-native'
-import { styled } from '@ui/theme'
-import { useTheme } from '@shared/hooks'
 
 import { Typography } from '../atoms/typography'
 
 import * as icons from './index'
+import { styled, useTheme } from '../theme'
 
 const ListWrapper = styled.View`
   flex-direction: row;
@@ -34,12 +33,12 @@ export const Icons = () => {
   return (
     <ScrollView>
       <ListWrapper>
-        {(Object.keys(icons) as IconNames[]).map((iconName) => {
+        {(Object.keys(icons) as IconNames[]).map(iconName => {
           const CurrentIcon = icons[iconName]
           return (
             <IconWrapper key={iconName}>
               <CurrentIcon color={theme.palette.text.primary} />
-              <IconName variant="caption1">{iconName}</IconName>
+              <IconName variant='caption1'>{iconName}</IconName>
             </IconWrapper>
           )
         })}
