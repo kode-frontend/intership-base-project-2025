@@ -8,7 +8,8 @@
       "@features/*": ["features/*"],
       "@entities/*": ["entities/*"],
       "@widgets/*": ["widgets/*"],
-      "@pages/*": ["pages/*"],
+      "@screens/*": ["screens/*"],
+      "@routing/*": ["routing/*"],
       "@app/*": ["app/*"]
     },
     "types": ["styled-components-react-native"]
