@@ -10,6 +10,7 @@
       "@widgets/*": ["widgets/*"],
       "@pages/*": ["pages/*"],
       "@app/*": ["app/*"]
-    }
+    },
+    "types": ["styled-components-react-native"]
   }
 }
