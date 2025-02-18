@@ -1,7 +1,7 @@
-import { StyleProp, TextStyle } from 'react-native'
+import { styled } from '@shared/ui/theme'
+import { TypographyVariants } from '@shared/ui/theme/types'
 import React, { ReactNode } from 'react'
-import { styled } from '@ui/theme'
-import { TypographyVariants } from '@ui/theme/types'
+import { StyleProp, TextStyle } from 'react-native'
 
 type TTypographyAlignment = 'center' | 'left' | 'right'
 
