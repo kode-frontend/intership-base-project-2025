@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Button, SafeAreaView } from 'react-native'
-
-import { RootStack } from '@routing/root-stack-navigator'
+import { NavigationContainer } from '@react-navigation/native'
+import { AppNavigation } from '@routing/app-navigation'
 
 import { Providers } from './providers'
 import { Storybook } from '../../.storybook'
@@ -25,7 +25,9 @@ export const App = () => {
 
   return (
     <Providers>
-      <RootStack />
+      <NavigationContainer>
+        <AppNavigation />
+      </NavigationContainer>
     </Providers>
   )
 }
