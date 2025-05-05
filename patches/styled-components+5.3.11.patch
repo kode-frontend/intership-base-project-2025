@@ -1,0 +1,15 @@
+diff --git a/node_modules/styled-components/native/dist/styled-components.native.cjs.js b/node_modules/styled-components/native/dist/styled-components.native.cjs.js
+index b8229f9..e5ab816 100644
+--- a/node_modules/styled-components/native/dist/styled-components.native.cjs.js
++++ b/node_modules/styled-components/native/dist/styled-components.native.cjs.js
+@@ -425,6 +425,10 @@ var rehydrateSheetFromTag = function rehydrateSheetFromTag(sheet, style) {
+ };
+ 
+ var rehydrateSheet = function rehydrateSheet(sheet) {
++  console.log('skip rehydrateSheet' )
++  if(typeof document === 'undefined'){
++    return 
++  }
+   var nodes = document.querySelectorAll(SELECTOR);
+ 
+   for (var i = 0, l = nodes.length; i < l; i++) {
